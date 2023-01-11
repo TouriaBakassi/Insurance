@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --color1:rgb(228, 200, 255);
+    --color2: rgb(118, 83, 139);
+    --color3: rgb( 57, 20, 93);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: #fff; */
+    
+    font-family: 'Cairo', sans-serif;
+}
+header{
+display: flex;
+justify-content: space-between;
+background-color: rgb(245, 242, 248);
+background: url(./images/background.png);
+background-size: cover;
+flex-direction: column;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+nav h3 a{
+
+text-decoration: none;
+font-size: 30px;
+font-weight: 700;
+
+color: var(--color3);
+}
+nav h3 a sup{
+color: var(--color1);
+font-size: 20px;
+}
+
+
+
+.introdaction{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+#animations-example-4 {
+    height: 200px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  #animations-example-4 tbody td {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 10px;
+    background-color: rgb(228, 200, 255);
+    transform-origin: bottom;
+    animation: revealing-bars 4s linear ;
+  }
+  @keyframes revealing-bars {
+    0%  { transform: scaleY( 0 ); }
+    15% { transform: scaleY( 1 ); }
+  }
