@@ -50,6 +50,7 @@ nav ul {
 nav ul li{
     display: inline-block;
     padding: 10px 30px;
+    margin-left: 20px;
 }
 nav ul li a{
 
@@ -89,6 +90,7 @@ nav ul li a:hover{
     justify-content: space-between;
     padding: 100px;
 }
+/* .................................... left-intro */
 .left-intro{
     width: 38%;
     display: flex;
@@ -142,19 +144,22 @@ margin-bottom: 0px;
 .txt-review span{
     font-weight: 700;
 }
+/* ...................................... right-intro */
 .right-intro{
+    width: 52%;
+    display: flex;
+    justify-content: center;
+}
+/* ....................................... right-intro  part-one  */
+.part-one{
     width: 50%;
     display: flex;
-    justify-content: space-between;
-}
-.part-one{
-    width: 60%;
-    display: flex;
     justify-content: flex-start;
-    flex-direction: column;transform: translateY(-15%);
+    flex-direction: column;
+    transform: translateY(-15%);
 }
 .part-one .image{
-width: 80%;
+width: 90%;
 position: relative;
 
 }
@@ -167,7 +172,7 @@ position: relative;
     content: "";
     background:  linear-gradient(90deg, rgb(233, 219, 255),var(--color1));
     border-radius: 10px;
-    height: 80%;
+    height: 82%;
    position: absolute;
    top: 16;bottom: 0;right: 0;left: 0;
    z-index: -1;
@@ -175,7 +180,10 @@ position: relative;
 .part-one .info{
 width: 100%;
 background-color: white;
-transform: translateX(-30px);
+position: relative;
+right: -21%;
+transform: translateX(-30%);
+
 display: flex;justify-content: space-around;
 padding: 10px;
 border-radius: 10px;
@@ -189,8 +197,87 @@ margin: 20px 0px;
   object-fit: cover;
 }
 .part-one .info div {
-  display: inline-block;
+  display: flex;
   width: 80%;
+flex-direction: column;
+padding: 0px 8px;
+color: var(--color3);
+}
+.part-one .info div h5{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .part-one .info div p{
+    font-size: 12px;
+    line-height: 1;
+  }
+  /* ....................................... right-intro  part-two  */
+.part-two{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(13%);
+}
+.part-two .all-price{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 5px;
+}
+.all-price .price{
+width: 96%;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 10px 5px;
+   align-self: center;
+}
+.all-price .price:nth-child(1){
+   border-bottom: .4px solid rgb(223, 223, 223); 
+}
+.all-price p{
+    font-size: 9px;
+    color: var(--color3)
+}
+.all-price .price-title{
+    font-size: 13px;
+    font-weight: 500;
+}
+.all-price .price-title-bold{
+    font-size: 12px;
+    font-weight: 700;
+}
+.price-left{
+    width: 45%;
+    display: flex;
+}
+.price-left .circle{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:var(--color1);
+    margin: 0px 12px 0px 0px;
+}
+.price-left .circle2{
+    background-color:var(--color2);
+}
+.price-right{
+    width: 55%;
+    text-align: end;
+}
+.table{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0px;
+    color: var(--color3);
+}
+table tr th{
+    font-size: 10px;
 }
 
 
@@ -213,4 +300,30 @@ margin: 20px 0px;
   @keyframes revealing-bars {
     0%  { transform: scaleY( 0 ); }
     15% { transform: scaleY( 1 ); }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  @media screen and(max-width: 1140px) {
+    
   }
