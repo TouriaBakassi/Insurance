@@ -148,12 +148,15 @@ margin-bottom: 0px;
     justify-content: space-between;
 }
 .part-one{
-    width: 55%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;transform: translateY(-15%);
 }
 .part-one .image{
 width: 80%;
 position: relative;
-transform: translateY(-20%);
+
 }
 .part-one .image img{
     width: 100%; 
@@ -176,6 +179,7 @@ transform: translateX(-30px);
 display: flex;justify-content: space-around;
 padding: 10px;
 border-radius: 10px;
+margin: 20px 0px;
 }
 .part-one .info img{
     width: 50px;
