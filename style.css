@@ -17,6 +17,8 @@ body{
     
     font-family: 'Cairo', sans-serif;
 }
+ /* .......................................Main Start............................ */
+
 header{
 display: flex;
 justify-content: space-between;
@@ -84,6 +86,13 @@ nav ul li a:hover{
     text-decoration: none;
     transition: all .9s ease-in-out;
 }
+.fa-bars{
+    font-size: 25px ;
+    color: var(--color2);
+    padding: 10px;
+    display: none;
+}
+/* ...................................................................................... */
 .introdaction{
     width: 100%;
     display: flex;
@@ -183,7 +192,6 @@ background-color: white;
 position: relative;
 right: -21%;
 transform: translateX(-30%);
-
 display: flex;justify-content: space-around;
 padding: 10px;
 border-radius: 10px;
@@ -279,12 +287,6 @@ width: 96%;
 table tr th{
     font-size: 10px;
 }
-
-
-
-
-
-
 #animations-example-4 {
     height: 200px;
     max-width: 300px;
@@ -301,29 +303,254 @@ table tr th{
     0%  { transform: scaleY( 0 ); }
     15% { transform: scaleY( 1 ); }
   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  @media screen and(max-width: 1140px) {
+  /* .......................................Header end............................ */
+ /* .......................................Main Start............................ */
+main{
+    width: 100%;
     
+}
+.all-cards{
+    padding: 70px 100px 40px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.all-cards .card{
+    width: 31%;
+
+}
+.card img{
+    width: 100%;
+}
+.card .card-descrip{
+    width: 100%;
+    color: var(--color3);
+}
+.card .card-descrip h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.card .card-descrip p{
+    font-size: 18px;
+    font-weight: 500; 
+    color: var(--color2);
+    padding: 15px 0px;
+}
+.card .card-descrip a{
+    color: var(--color3);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+.card .card-descrip a i{
+    font-size: 10px;
+    margin: 0px 5px;
+    padding: 5px;
+    background-color: var(--color1);
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    transition: all .2s ease-in-out;
+}
+.card .card-descrip a:hover i{
+    transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+.all-cards{
+        padding:  40px;
+    }
+
+}
+
+
+
+
+  @media screen and (max-width: 1160px) {
+    .introdaction{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    /* .................................... left-intro */
+    .left-intro{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .right-intro{
+        width: 100%;
+        margin: 100px 0px 0px 0px;
+        padding: 20px 40px;
+    }
+    /* /////////////////////// ..................Main */
+    .all-cards{
+        padding:  40px;
+        justify-content: center;
+        
+    }
+    .all-cards .card{
+        width: 55%;
+        margin-bottom: 20px;
+    }
+  }
+
+  /* .................................................................. */
+  @media screen and (max-width: 920px) {
+    nav{
+        padding: 40px;
+    }
+ .fa-bars{
+        font-size: 25px ;
+        color: var(--color2);
+        padding: 10px;
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+   
+  }
+/* ................................................................................... */
+  @media screen and (max-width: 800px) {
+   
+    .part-one{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;   
+    }
+    .part-two{
+        display: none;
+    }
+    .part-one .image{
+        width: 100%;
+        }
+    .part-one .info{
+        width: 100%;
+        right: 0;
+        transform: translateX(0%);
+        }
   }
