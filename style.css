@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 :root{
+    --color0:#594D6D;
     --color1:rgb(228, 200, 255);
     --color2: rgb(118, 83, 139);
     --color3: rgb( 57, 20, 93);
@@ -13,7 +14,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    /* background-color: #fff; */
+    /* background-color: Cfff; */
     
     font-family: 'Cairo', sans-serif;
 }
@@ -554,16 +555,128 @@ width: 33%;
     line-height: 1.5;
     padding: 10px 0px 30px 0px;
 }
+ /* .......................Sect7 Start.................... */
+ .sect7{
+    width: 100%;
+    padding:40px 100px ;
+    display: flex;justify-content: space-between;
+    align-items: center;flex-direction: column;
+    color: var(--color3);
+}
+.plan-intro{
+    width: 100%;
+    display: flex;justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px;
+}
+.plan-intro h2{
+    font-size: 43px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 10px 0px;
+}
+.plan-intro p{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color2);
+}
+.all-plan{
+    width: 100%;
+    display: flex;justify-content: space-between;flex-wrap: wrap;   
+    padding: 40px 0px;
 
-
-
-
-
-
-
-
-
-
+}
+.plan{
+    width: 32%;
+    background-color: white;
+    /* box-shadow: 5px 10px 30px rgb(200, 200, 200); */
+    padding:10px ;
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+    filter: blur(.3px);
+}
+.plan h4{
+font-size: 23px;
+font-weight: 600;
+}
+.plan h3{
+ font-size: 46px;
+ font-weight: 600; 
+    }
+.plan h3 span{
+   font-size: 15px;
+   font-weight: 500; 
+color: var(--color0);
+        }
+.plan h3 .dollar{
+   font-size: 23px;
+  font-weight: 700;
+  color: var(--color3);
+     }
+.plan p{
+    width: 70%;
+  font-size: 14px;
+  font-weight: 500; 
+  color: var(--color0);
+  padding: 0px 0px 20px 0px;
+      }                  
+.plan a{
+ width: 100%;
+ padding: 10px 0px; 
+ text-align: center;
+ text-decoration: none;
+ align-self: center;
+ background-color: #fff;
+ border: .3px solid var(--color1);
+ border-radius: 10px;
+ font-weight: 700;
+ transition: all .5s ease-in-out;
+    }
+.plan a:hover{  
+ background-color: var(--color1);
+}   
+.plan ul{
+  list-style: none;
+  padding: 20px 0px;
+  }     
+.plan ul li{
+   font-size: 14px;
+   padding: 5px 0px;
+   font-weight: 600;
+   color: var(--color2);
+    } 
+.plan ul li i{
+    font-size: 14px;
+    font-weight: 800;
+    padding-right: 15px;
+        } 
+/* ................................... Sect8 ....................... */
+.sect8{
+    width: 100%;
+    padding:40px  100px ;
+    display: flex;justify-content: center;
+    color: var(--color3);
+}
+.carte{
+    width: 100%;
+    display: flex;justify-content: space-between;
+    flex-direction: row;align-items: center;
+    background-color: rgb(244, 218, 244);
+    padding: 10px;
+}
+.img2-descrip{
+    width: 48%;
+    padding: 20px;
+    position: relative;
+top: 0;left: 0;right: 0;bottom: 0;
+}
+.carte-img{
+    width: 48%;
+}
+.carte-img img{
+    width: 100%;
+}
 
 
 
@@ -809,6 +922,13 @@ width: 33%;
        flex-direction: column;
        color: var(--color3);
     }
+    /* ..............................Sect7 ................. */
+    .sect7{
+        padding: 40px ;  
+    }
+    .plan p{
+        width: 90%;
+    } 
   }
 
   /* .................................................................. */
@@ -825,12 +945,33 @@ width: 33%;
     nav ul{
         display: none;
     }
-   
+   /* ............................ Sect7 ....................... */
+   .plan-intro{
+    width: 100%;
+    display: flex;justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px ;
+}
+    .all-plan{
+        width: 100%;
+        display: flex;justify-content: center;flex-wrap: wrap;   
+        padding: 40px 0px;
+    
+    }
+    .plan{
+        width: 90%;
+        margin: 5px 0px;
+    }
+    .plan p{
+        width: 90%;
+    }  
   }
 /* ................................................................................... */
   @media screen and (max-width: 800px) {
     /* .......................header Start................ */
     .part-one{
+        padding-top: 60px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -891,5 +1032,9 @@ width: 33%;
 }
 .sect5 .sect2-descrip{
     width: 90%;
+}
+  /* ..............................Sect7 ................. */
+  .sect7{
+    padding: 40px 0px;  
 }
   }
