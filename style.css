@@ -313,6 +313,7 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;flex-direction: column;
+    align-items: center;
 }
  /* .......................Sect1 Start.................... */
 .all-cards{
@@ -660,22 +661,82 @@ color: var(--color0);
 }
 .carte{
     width: 100%;
-    display: flex;justify-content: space-between;
+    display: flex;justify-content: space-around;
     flex-direction: row;align-items: center;
-    background-color: rgb(244, 218, 244);
-    padding: 10px;
+    /* background: linear-gradient(120deg ,rgb(246, 246, 246)65%,rgb(224, 168, 242)35% ); */
+    background: url(./images/bgrd-carte.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 10px 10px 0px 10px;
+
 }
-.img2-descrip{
+.carte .img2-descrip{
+    background-color: transparent;
+    box-shadow: none;
     width: 48%;
-    padding: 20px;
+    align-self: center;
+    padding: 5px 65px;
     position: relative;
 top: 0;left: 0;right: 0;bottom: 0;
+color: var(--color3);
+display: flex;justify-content: space-between;flex-direction: column;
+vertical-align: middle;
 }
+.carte .img2-descrip .quote{
+    width: 8%;
+    }
+.carte .img2-descrip p{
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.5;
+        padding: 20px 0px;
+    }
+    
+.carte .img2-descrip .info{
+      right: 0%;
+    transform: translateX(0%);
+    padding: 10px 0px;
+    margin: 0px;  
+    box-shadow: none;
+    background-color: transparent;
+    justify-content: flex-start;
+    }
+    
+.carte .img2-descrip .info img{
+        width: 55px;
+        height: 55px;
+        border: 3px solid var(--color3);
+        object-fit: contain;
+        border-radius: 50%;
+        margin-right: 5px;
+
+    }
+.carte .img2-descrip .info div {
+       line-height: 1.4;
+       margin: 0;
+      position: relative;
+      align-self: flex-start;
+      }
+.carte .img2-descrip  .info div h5{
+          font-size: 22px;
+          font-weight: 800;
+        }
+.carte .img2-descrip .info div p{
+    padding: 0;
+          font-size: 15px;
+          font-weight: 500;
+        }
+
+/* .................... */
 .carte-img{
-    width: 48%;
+    width: 50%;
 }
 .carte-img img{
     width: 100%;
+    vertical-align: middle;
+    object-fit: contain;
 }
 
 
@@ -803,6 +864,21 @@ top: 0;left: 0;right: 0;bottom: 0;
         padding:  40px;
     }
 
+    /* .....................Sect8 ............ */
+    .sect8{
+        padding: 40px 70px;
+    }
+    .carte{
+        width: 100%;
+        display: flex;justify-content: space-around;
+        flex-direction: column;align-items: center;
+    }
+    .carte .img2-descrip{
+       width: 90%; 
+    }
+.carte-img{
+            width: 90%;
+        }
 }
 
 
@@ -966,6 +1042,13 @@ top: 0;left: 0;right: 0;bottom: 0;
     .plan p{
         width: 90%;
     }  
+    /* ..................... Sect8 .............. */
+    .sect8{
+        padding: 40px 20px;
+    }
+    .carte .img2-descrip>p{
+font-size: 26px;
+    }
   }
 /* ................................................................................... */
   @media screen and (max-width: 800px) {
