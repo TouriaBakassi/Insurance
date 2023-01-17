@@ -34,7 +34,7 @@ nav{
     justify-content: space-between;
     padding: 40px 100px;
 }
-nav h3 a{
+.logo{
 
 text-decoration: none;
 font-size: 29px;
@@ -42,7 +42,7 @@ font-weight: 700;
 filter: blur(.7px);
 color: var(--color3);
 }
-nav h3 a sup{
+.logo sup{
 color: var(--color1);
 font-size: 16px;
 }
@@ -398,6 +398,7 @@ border-radius: 10px;
 }
 .img2-descrip .quote{
 width: 8%;
+object-fit: contain;
 }
 .img2-descrip p{
     font-size: 18px;
@@ -655,7 +656,7 @@ color: var(--color0);
 /* ................................... Sect8 ....................... */
 .sect8{
     width: 100%;
-    padding:40px  100px ;
+    padding:40px  100px 60px 100px;
     display: flex;justify-content: center;
     color: var(--color3);
 }
@@ -738,15 +739,97 @@ vertical-align: middle;
     vertical-align: middle;
     object-fit: contain;
 }
-
-
-
  /* .......................................Main End............................ */
+ /* .......................................Footer Start............................ */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;flex-direction: column;
+    background: url(./images/footer-bgrd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer-part1{
+    width: 100%;display: flex;justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 100px 90px 100px; 
+}
+.footer-item{
+ width: 20%;
+ list-style: none;
+}
+.footer-item li{
+font-size: 16px ;
+font-weight: 700;
+padding-bottom: 8px;
+color: var(--color3);
+}
+.footer-item li a{
+text-decoration: none;
+font-size: 14px ;
+font-weight: 600;
+color: var(--color0);
+transition: all .5s ease-in-out;
+}
+.footer-item li a:hover{
+    text-decoration: underline;
+    color: var(--color3);
+    }
+.footer-logo{
+  width: 40%;
+}
+.footer-part2{
+    width: 100%;
+    padding: 10px 100px; 
+}
+.copyright{
+   display: flex;justify-content: space-between;
+align-items: flex-start; 
+border-top: .5px solid rgb(233, 233, 233);
+padding: 35px 0px 90px 0px;
+}
+.copyright p{
+    font-size: 14px ;
+    font-weight: 600;
+    color: var(--color0);
+    padding: 10px 0px;
+
+}
+.copyright .reseaux-sociaux{
+    padding: 10px 0px;
+display: flex;justify-content: space-between;
+}
+.copyright .reseaux-sociaux i{
+   color: var(--color3);
+font-size: 23px; 
+cursor: pointer;
+padding: 0px 15px;
+}
+  /* .......................................Footer End............................ */
+/* .......................... Features Start........................ */
+.header-features{
+ background: none; 
+ background-color: #fff;
+}
+.features-introdaction{
+padding: 30px 100px 60px 100px;
+    align-items: center;
+
+}
+.features-right-intro{
+    width: 50%;
+}
+.features-right-intro img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 
 
 
 
+/* .......................... Features End........................ */
 
 
 
@@ -874,7 +957,8 @@ vertical-align: middle;
         flex-direction: column;align-items: center;
     }
     .carte .img2-descrip{
-       width: 90%; 
+       width: 90%;
+
     }
 .carte-img{
             width: 90%;
@@ -1005,6 +1089,13 @@ vertical-align: middle;
     .plan p{
         width: 90%;
     } 
+    /* .............. Footer ................. */
+    .footer-part1{
+        padding: 80px 40px 90px 80px; 
+    }
+    .footer-part2{
+        padding: 10px 40px;
+    }
   }
 
   /* .................................................................. */
@@ -1049,6 +1140,28 @@ vertical-align: middle;
     .carte .img2-descrip>p{
 font-size: 26px;
     }
+    /* ....................... Footer ................... */
+    .footer-part1{
+        width: 100%;display: flex;justify-content: space-between;
+        align-items: flex-start;flex-wrap: wrap;
+        padding: 80px 40px 90px 40px; 
+    }
+    .footer-item{
+     width: 100%;
+     padding: 10px 0px;
+
+    }
+    .footer-part2{
+        width: 100%;
+        padding: 10px 20px; 
+    }
+    .copyright{
+       display: flex;justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;flex-direction: column; 
+    border-top: .5px solid rgb(233, 233, 233);
+    padding: 35px 0px 90px 0px;
+    }
   }
 /* ................................................................................... */
   @media screen and (max-width: 800px) {
@@ -1083,7 +1196,7 @@ font-size: 26px;
             width: 90%;
             position: relative;
         }
-        .img2-descrip{
+     .img2-descrip{
             width: 90%;
             align-self: center;
             position: relative;
@@ -1120,4 +1233,9 @@ font-size: 26px;
   .sect7{
     padding: 40px 0px;  
 }
+/* ........................... Sect8 ...................... */
+.carte .img2-descrip{
+    width: 90%;
+     padding: 5px;
+ }
   }
