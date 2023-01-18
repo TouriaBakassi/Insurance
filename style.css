@@ -1004,11 +1004,32 @@ padding: 0px 0px 40px 0px;
         vertical-align: bottom;
      }
 /* .......................... About End........................ /////////*/
+/* .......................... Contact Start ...................////////// */
+.header-contact{
+    background: url(./images/contact-bgrnd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact{
+    width: 50%;
+    align-self: center;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px 100px; */
+    
+}
+.contact h2{
+    width: 100%;
+    /* text-align: left; */
+   
+}
+.contact p{
+    width: 100%;
+    /* text-align: left; */
+} 
 
-
-
-  
-
+/* .......................... Contact End ...................////////// */
 
 
 
