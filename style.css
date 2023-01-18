@@ -4,6 +4,7 @@
     --color1:rgb(228, 200, 255);
     --color2: rgb(118, 83, 139);
     --color3: rgb( 57, 20, 93);
+    --color4:rgb(89,77,109);
 }
 *{
     margin: 0;
@@ -903,6 +904,7 @@ width: 50%;
 }
 .about-fille-item{
     width: 31%;
+    margin: 5px;
 }
 .about-fille-item img{
     width: 100%;
@@ -931,10 +933,76 @@ width: 50%;
 .insurance-definition p{
     font-size: 18px;
 font-weight: 500;
-color: rgb(89,77,109);
+color: var(--color4);
 line-height: 1.9;
 padding: 20px 0px;
 }
+/*................... Sect3 ..............  */
+.about-insurance-numbers{
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.about-insurance-numbers h2{
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--color3);
+    line-height: 1.5;
+}
+.insurance-numbers{
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;justify-content: space-between; align-items: flex-start;
+    flex-wrap: wrap;  
+}
+.insurance-numbers-item{
+width: 30%;
+padding: 10px ;
+display: flex;justify-content: space-between;align-items: center;
+flex-direction: column;
+
+}
+.insurance-numbers-item h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color3);
+    line-height: 1.5;
+    }
+.insurance-numbers-item h3{
+    font-size: 72px;
+    font-weight: 600;
+    color: var(--color3);
+    line-height: 1.5;
+        }
+    .insurance-numbers-item p{
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--color4);
+        line-height: 1.8;
+     }
+     /* .................Sect5 ............. */
+     .partners{
+        padding: 0px 100px 40px 100px;
+     }
+     .partners h2{
+align-self: flex-start;
+padding: 0px 0px 40px 0px;
+     }
+     .all-logo{
+        padding: 80px 0px 0px 0px;
+        display: flex;align-items: center;
+     }
+     .logo{
+        width: 13%;
+        
+     }
+     .logo img{
+        width: 100%;
+        vertical-align: bottom;
+     }
 /* .......................... About End........................ /////////*/
 
 
@@ -1212,6 +1280,15 @@ padding: 20px 0px;
         display: flex;justify-content: center;align-items: center;
         text-align: center;
     }
+    /* ........Sect3 */
+    .about-insurance-numbers{
+        width: 100%;
+        padding: 40px;
+        display: flex;justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
   }
 
   /* .................................................................. */
@@ -1306,6 +1383,46 @@ font-size: 26px;
 .insurance-definition{
       width: 90%;
  }
+ /*................... Sect3 ..............  */
+.about-insurance-numbers{
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.about-insurance-numbers h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color3);
+    line-height: 1.5;
+}
+.insurance-numbers{
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;justify-content: center;   
+}
+.insurance-numbers-item{
+width: 90%;
+padding: 0px ;
+margin: 16px 0px;
+display: flex;justify-content: space-between;align-items: center;
+flex-direction: column;
+
+}
+.insurance-numbers-item h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color3);
+    line-height: 1.5;
+    }
+.insurance-numbers-item h3{
+    font-size: 65px;
+    font-weight: 600;
+    color: var(--color3);
+    line-height: 1.5;
+        }
   }
 /* ................................................................................... */
   @media screen and (max-width: 800px) {
