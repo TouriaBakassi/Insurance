@@ -995,11 +995,11 @@ padding: 0px 0px 40px 0px;
         padding: 80px 0px 0px 0px;
         display: flex;align-items: center;
      }
-     .logo{
+     .p-logo{
         width: 13%;
-        
+        margin: 5px;
      }
-     .logo img{
+     .p-logo img{
         width: 100%;
         vertical-align: bottom;
      }
@@ -1289,6 +1289,15 @@ padding: 0px 0px 40px 0px;
         flex-direction: column;
         text-align: center;
     }
+     /* ............Sect5 .......... */
+     .all-logo{
+        justify-content: center;
+     }
+     .p-logo{
+        width: 40%;
+        padding:30px;
+        margin: 10px 
+     }
   }
 
   /* .................................................................. */
@@ -1423,6 +1432,11 @@ flex-direction: column;
     color: var(--color3);
     line-height: 1.5;
         }
+        /* ............Sect5 .......... */
+        .p-logo{
+            width: 60%;
+            padding:40px 10px ;
+         }
   }
 /* ................................................................................... */
   @media screen and (max-width: 800px) {
