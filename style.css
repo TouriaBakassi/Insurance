@@ -892,17 +892,50 @@ line-height: 1.5;
 width: 50%;
 }
 
-
-
-
-
-
 /* .......................... Blog End........................ /////////*/
+/* .......................... About Start........................ /////////*/
+/* .............. sect1 .......... */
+.all-about-fille-imgs{
+    width: 100%;
+    padding:40px 110px ;
+    display: flex;justify-content: space-between;align-items: center;
+    flex-wrap: wrap;
+}
+.about-fille-item{
+    width: 31%;
+}
+.about-fille-item img{
+    width: 100%;
+    object-fit: contain;
+}
+/* ............. Sect2 ............ */
+.about-insurance-definition{
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;justify-content: center;align-items: center;
+    text-align: center;
+}
+.insurance-definition{
+    width: 54%;
+    display: flex;justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 
-
-
-
-
+}
+.insurance-definition h2{
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--color3);
+    line-height: 1.5;
+}
+.insurance-definition p{
+    font-size: 18px;
+font-weight: 500;
+color: rgb(89,77,109);
+line-height: 1.9;
+padding: 20px 0px;
+}
+/* .......................... About End........................ /////////*/
 
 
 
@@ -1164,6 +1197,21 @@ width: 50%;
     .footer-part2{
         padding: 10px 40px;
     }
+
+    /* ./////////////////////////////////////////....Features,About,Blog, */
+        /* ......sect1 */
+    .all-about-fille-imgs{
+        width: 100%;
+        padding:40px ;
+        display: flex;justify-content: center;align-items: center;
+    }
+    /* ......sect2 */
+    .about-insurance-definition{
+        width: 100%;
+        padding: 40px ;
+        display: flex;justify-content: center;align-items: center;
+        text-align: center;
+    }
   }
 
   /* .................................................................. */
@@ -1238,7 +1286,26 @@ font-size: 26px;
         line-height: 1.3;
         width: 90%;
         }
-
+        /* .............. sect1 .......... */
+.all-about-fille-imgs{
+    width: 100%;
+    padding:40px 20px ;
+    display: flex;justify-content: center;
+}
+.about-fille-item{
+    width: 90%;
+    padding: 20px 0px;
+}
+/* .................Sect2 ............... */
+.about-insurance-definition{
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;justify-content: center;align-items: center;
+    text-align: center;
+}
+.insurance-definition{
+      width: 90%;
+ }
   }
 /* ................................................................................... */
   @media screen and (max-width: 800px) {
