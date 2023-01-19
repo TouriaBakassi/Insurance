@@ -1360,6 +1360,16 @@ opacity: .8;
         padding:30px;
         margin: 10px 
      }
+     /* .............Contact... */
+    .contact{
+        width: 60%;
+        align-self: center;
+        text-align: left;
+        justify-content: center;
+        align-items: flex-start;
+        padding:70px 40px 40px 40px;
+        
+    }
   }
 
   /* .................................................................. */
@@ -1495,10 +1505,20 @@ flex-direction: column;
     line-height: 1.5;
         }
         /* ............Sect5 .......... */
-        .p-logo{
-            width: 60%;
-            padding:40px 10px ;
-         }
+    .p-logo{
+      width: 60%;
+      padding:40px 10px ;
+     }
+/* ...............Contact ............. */
+.contact{
+    width: 90%;
+    align-self: center;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+    padding:70px 20px 40px 20px;
+    
+}
   }
 /* ................................................................................... */
   @media screen and (max-width: 800px) {
