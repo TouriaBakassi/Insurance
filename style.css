@@ -1071,6 +1071,82 @@ min-height: 20vh;
 opacity: .8;
 }
 /* .......................... Contact End ...................////////// */
+/* .......................... Shop Start...................////////// */
+.header-shop{
+    background-position: center;   
+}
+.header-shop .plan-intro {
+    text-align: center;
+    }
+.header-shop .plan-intro h2{
+font-size: 75px;
+}
+.header-shop .plan-intro p{
+    color: var(--color3);
+    width: 40%;
+}
+.header-shop .plan{
+background-color: transparent;
+}
+.why-us{
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;justify-content: space-between;
+    flex-direction: column;
+}
+.why-us-intro{
+    width: 100%;
+    display: flex;justify-content: space-between;
+    align-items: flex-start;flex-flow: row wrap;
+    color: var(--color3);
+    padding: 10px 0px 50px 0px;
+}
+.why-us-intro h3{
+   font-size: 55px;
+   font-weight: 600;
+   line-height: 1.2;
+}
+.why-us-intro p{
+    width: 40%;
+    font-size: 18px;
+    font-weight: 500;
+}
+.why-us-img{
+    width: 100%;
+   height: 60vh;
+    border-radius: 10px;
+}
+.why-us-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* object-position: center; */
+    object-fit: cover;
+}
+.insure-type{
+    width: 100%;
+    display: flex;justify-content: space-between;
+    align-items: flex-start; flex-wrap: wrap;
+    padding: 50px 0px;
+}
+.insure-type-item{
+    width: 31%;
+    color: var(--color3);
+    padding: 20px 0px;
+    margin: 5px;
+}
+.insure-type-item h4{
+    font-size: 23px;
+    font-weight: 500;
+}
+.insure-type-item p{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color4);
+    line-height: 1.8;
+    padding: 8px 0px;
+}
+/* .......................... Shop End ...................////////// */
 
 
 
@@ -1370,6 +1446,13 @@ opacity: .8;
         padding:70px 40px 40px 40px;
         
     }
+    /* .//////........ shop */
+    .why-us{
+        width: 100%;
+        padding: 40px 60px;
+        display: flex;justify-content: space-between;
+        flex-direction: column;
+    }
   }
 
   /* .................................................................. */
@@ -1518,6 +1601,50 @@ flex-direction: column;
     align-items: flex-start;
     padding:70px 20px 40px 20px;
     
+}
+/* ./////////////...................shop */
+.why-us{
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;justify-content: space-between;
+    flex-direction: column;
+}
+.header-shop .plan-intro{
+    text-align: left;
+}
+.header-shop .plan-intro h2{
+   font-size: 60px;
+}
+.header-shop .plan-intro p{
+    color: var(--color3);
+    width: 90%;
+}
+.why-us-intro{
+    width: 100%;
+    display: flex;justify-content: center;
+    align-items: center;flex-flow: row wrap;
+    text-align: center;
+    color: var(--color3);
+    padding: 10px 0px 50px 0px;
+}
+.why-us-intro h3{
+   font-size: 45px;
+}
+.why-us-intro p{
+    width: 100%;
+}
+.insure-type{
+    width: 100%;
+    display: flex;justify-content: center;
+    align-items: center; flex-wrap: wrap;
+    text-align: center;
+    padding: 50px 0px;
+}
+.insure-type-item{
+    width: 90%;
+    color: var(--color3);
+    padding: 20px 0px;
+    margin: 5px;
 }
   }
 /* ................................................................................... */
