@@ -1,1245 +1,1304 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
-:root{
-    --color0:#594D6D;
-    --color1:rgb(228, 200, 255);
-    --color2: rgb(118, 83, 139);
-    --color3: rgb( 57, 20, 93);
-    --color4:rgb(89,77,109);
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --color0: #594d6d;
+  --color1: rgb(228, 200, 255);
+  --color2: rgb(118, 83, 139);
+  --color3: rgb(57, 20, 93);
+  --color4: rgb(89, 77, 109);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    /* background-color: Cfff; */
-    
-    font-family: 'Cairo', sans-serif;
+body {
+  /* background-color: Cfff; */
+  user-select: none;
+  font-family: "Cairo", sans-serif;
 }
- /* .......................................header Start............................ */
+/* .......................................header Start............................ */
 
-header{
-display: flex;
-justify-content: space-between;
-background-color: rgb(245, 242, 248);
-background: url(./images/background.png);
-background-size: cover;
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(245, 242, 248);
+  background: url(./images/background.png);
+  background-size: cover;
 
-flex-direction: column;
+  flex-direction: column;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 100px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
 }
-.logo{
-
-text-decoration: none;
-font-size: 29px;
-font-weight: 700;
-filter: blur(.7px);
-color: var(--color3);
+.logo {
+  text-decoration: none;
+  font-size: 29px;
+  font-weight: 700;
+  filter: blur(0.7px);
+  color: var(--color3);
 }
-.logo sup{
-color: var(--color1);
-font-size: 16px;
+.logo sup {
+  color: var(--color1);
+  font-size: 16px;
 }
 nav ul {
-    
-    padding-right: 20px;
+  padding-right: 20px;
 }
-nav ul li{
-    display: inline-block;
-    padding: 10px 30px;
-    margin-left: 20px;
+nav ul li {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-left: 13px;
 }
-nav ul li a{
-
-     color: var(--color3);
-     font-size: 18px;
-     font-weight: 600;
-     text-decoration: none;
+nav ul li a {
+  color: var(--color3);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
 }
-nav ul li a:hover{
-    color: var(--color2);
+nav ul li a:hover {
+  color: var(--color2);
+  text-decoration: underline;
+}
+nav ul li a.active{
     text-decoration: underline;
+    text-underline-position: underline;
 }
-.btn{
-    padding: 6px 15px;
-    background-color:rgb(227, 208, 255);
-    border: 2px solid rgb(227, 208, 255);
-    
-    border-radius: 10px;
+.btn {
+  padding: 6px 15px;
+  background-color: rgb(227, 208, 255);
+  border: 2px solid rgb(227, 208, 255);
+
+  border-radius: 10px;
 }
-.btn a{
-    font-weight: 700;
-    font-size: 16px;
+.btn a {
+  font-weight: 700;
+  font-size: 16px;
 }
-.btn:hover{
-    background-color:white;
-    border: 2px solid rgb(227, 208, 255);
-    text-decoration: none;
-    transition: all .9s ease-in-out;
+.btn:hover {
+  background-color: white;
+  border: 2px solid rgb(227, 208, 255);
+  text-decoration: none;
+  transition: all 0.9s ease-in-out;
 }
-.btn:hover a{
-    text-decoration: none;
-    transition: all .9s ease-in-out;
+.btn:hover a {
+  text-decoration: none;
+  transition: all 0.9s ease-in-out;
 }
-.fa-bars{
-    font-size: 25px ;
-    color: var(--color2);
-    padding: 10px;
-    display: none;
+.fa-bars {
+  font-size: 25px;
+  color: var(--color2);
+  padding: 10px;
+  display: none;
 }
 /* ...................................................................................... */
-.introdaction{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 100px;
+.introdaction {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
 }
 /* .................................... left-intro */
-.left-intro{
-    width: 38%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+.left-intro {
+  width: 38%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
-.left-intro h1{
-font-size: 72px;
-font-weight: 600;
-line-height: 1.1;
-color: var(--color3);
-margin-bottom: 0px;
+.left-intro h1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--color3);
+  margin-bottom: 0px;
 }
-.left-intro p.text{
-    width: 90%;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    color: rgb(89,77,109);
-    padding: 20px 0px 
+.left-intro p.text {
+  width: 90%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgb(89, 77, 109);
+  padding: 20px 0px;
 }
-.buy{
-    width: 36%;
-    padding: 10px 0px;
-    text-decoration: none;
-    text-align: center;
-    background-color: var(--color1);
-    color: var(--color3);
-    font-weight: 700;
-    font-size: 16px;
+.buy {
+  width: 36%;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--color1);
+  color: var(--color3);
+  font-weight: 700;
+  font-size: 16px;
 }
-.buy:hover{
-    background-color:white;
-    border: 2px solid rgb(227, 208, 255);
-    text-decoration: none;
-    transition: all .9s ease-in-out;
+.buy:hover {
+  background-color: white;
+  border: 2px solid rgb(227, 208, 255);
+  text-decoration: none;
+  transition: all 0.9s ease-in-out;
 }
-.left-intro .Trust-img{
-    padding: 34px 0px 0px 0px;
-    width: 25%;
+.left-intro .Trust-img {
+  padding: 34px 0px 0px 0px;
+  width: 25%;
 }
-.left-intro .Trust-img img{
-    width: 100%;
+.left-intro .Trust-img img {
+  width: 100%;
 }
-.txt-review{
-    color: var(--color3);
-    font-weight: 400;
-    font-size: 14px;
-    filter: blur(.5px);
+.txt-review {
+  color: var(--color3);
+  font-weight: 400;
+  font-size: 14px;
+  filter: blur(0.5px);
 }
-.txt-review span{
-    font-weight: 700;
+.txt-review span {
+  font-weight: 700;
 }
 /* ...................................... right-intro */
-.right-intro{
-    width: 52%;
-    display: flex;
-    justify-content: center;
+.right-intro {
+  width: 52%;
+  display: flex;
+  justify-content: center;
 }
 /* ....................................... right-intro  part-one  */
-.part-one{
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    transform: translateY(-15%);
+.part-one {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  transform: translateY(-15%);
 }
-.part-one .image{
-width: 90%;
-position: relative;
+.part-one .image {
+  width: 90%;
+  position: relative;
 }
-.part-one .image img{
-    width: 100%; 
-    vertical-align: bottom;
-    border-radius: 10px;
-    }
-.part-one .image::before{
-    content: "";
-    background:  linear-gradient(90deg, rgb(233, 219, 255),var(--color1));
-    border-radius: 10px;
-    height: 82%;
-   position: absolute;
-   top: 16;bottom: 0;right: 0;left: 0;
-   z-index: -1;
+.part-one .image img {
+  width: 100%;
+  vertical-align: bottom;
+  border-radius: 10px;
 }
-.info{
-width: 100%;
-background-color: white;
-position: relative;
-right: -21%;
-transform: translateX(-30%);
-display: flex;justify-content: space-around;
-padding: 10px;
-border-radius: 10px;
-margin: 20px 0px;
-box-shadow: 5px 10px 30px rgb(200, 200, 200);
+.part-one .image::before {
+  content: "";
+  background: linear-gradient(90deg, rgb(233, 219, 255), var(--color1));
+  border-radius: 10px;
+  height: 82%;
+  position: absolute;
+  top: 16;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
 }
-.part-one .info img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 4px solid var(--color3);
+.info {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  right: -21%;
+  transform: translateX(-30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0px;
+  box-shadow: 5px 10px 30px rgb(200, 200, 200);
+}
+.part-one .info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid var(--color3);
   object-fit: cover;
+  margin-right: 15px;
 }
 .info div {
   display: flex;
   width: 80%;
-flex-direction: column;
-padding: 0px 8px;
-color: var(--color3);
+  flex-direction: column;
+  padding: 0px 8px;
+  color: var(--color3);
 }
-.info div h5{
-    font-size: 16px;
-    font-weight: 500;
-  }
-.info div p{
-    font-size: 12px;
-    line-height: 1;
-  }
-  /* ....................................... right-intro  part-two  */
-.part-two{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    transform: translateY(13%);
+.info div h5 {
+  font-size: 16px;
+  font-weight: 500;
 }
-.part-two .all-price{
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    padding: 5px;
-    box-shadow: 5px 10px 30px rgb(200, 200, 200);
+.info div p {
+  font-size: 12px;
+  line-height: 1;
+}
+/* ....................................... right-intro  part-two  */
+.part-two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(13%);
+}
+.part-two .all-price {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 5px 10px 30px rgb(200, 200, 200);
+}
+.all-price .price {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
 
+  padding: 10px 5px;
+  align-self: center;
 }
-.all-price .price{
-width: 96%;
-    display: flex;
-    justify-content: space-between;
-    
-    padding: 10px 5px;
-   align-self: center;
+.all-price .price:nth-child(1) {
+  border-bottom: 0.4px solid rgb(223, 223, 223);
 }
-.all-price .price:nth-child(1){
-   border-bottom: .4px solid rgb(223, 223, 223); 
+.all-price p {
+  font-size: 9px;
+  color: var(--color3);
 }
-.all-price p{
-    font-size: 9px;
-    color: var(--color3)
+.all-price .price-title {
+  font-size: 13px;
+  font-weight: 500;
 }
-.all-price .price-title{
-    font-size: 13px;
-    font-weight: 500;
+.all-price .price-title-bold {
+  font-size: 12px;
+  font-weight: 700;
 }
-.all-price .price-title-bold{
-    font-size: 12px;
-    font-weight: 700;
+.price-left {
+  width: 45%;
+  display: flex;
 }
-.price-left{
-    width: 45%;
-    display: flex;
+.price-left .circle {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color1);
+  margin: 0px 12px 0px 0px;
 }
-.price-left .circle{
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color:var(--color1);
-    margin: 0px 12px 0px 0px;
+.price-left .circle2 {
+  background-color: var(--color2);
 }
-.price-left .circle2{
-    background-color:var(--color2);
+.price-right {
+  width: 55%;
+  text-align: end;
 }
-.price-right{
-    width: 55%;
-    text-align: end;
+.table {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0px;
+  color: var(--color3);
+  box-shadow: 5px 10px 30px rgb(200, 200, 200);
 }
-.table{
-    width: 100%;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0px;
-    color: var(--color3);
-    box-shadow: 5px 10px 30px rgb(200, 200, 200);
-}
-table tr th{
-    font-size: 10px;
+table tr th {
+  font-size: 10px;
 }
 #animations-example-4 {
-    height: 200px;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  #animations-example-4 tbody td {
-    border-top-left-radius: 7px;
-    border-top-right-radius: 10px;
-    background-color: rgb(228, 200, 255);
-    transform-origin: bottom;
-    animation: revealing-bars 4s linear ;
-  }
-  @keyframes revealing-bars {
-    0%  { transform: scaleY( 0 ); }
-    15% { transform: scaleY( 1 ); }
-  }
-  /* .......................................Header end............................ */
- /* .......................................Main Start............................ */
-main{
-    width: 100%;
-    display: flex;
-    justify-content: center;flex-direction: column;
-    align-items: center;
+  height: 200px;
+  max-width: 300px;
+  margin: 0 auto;
 }
- /* .......................Sect1 Start.................... */
-.all-cards{
-    padding: 70px 100px 40px 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+#animations-example-4 tbody td {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 10px;
+  background-color: rgb(228, 200, 255);
+  transform-origin: bottom;
+  animation: revealing-bars 4s linear;
 }
-.all-cards .card{
-    width: 31%;
+@keyframes revealing-bars {
+  0% {
+    transform: scaleY(0);
+  }
+  15% {
+    transform: scaleY(1);
+  }
+}
+/* .......................................Header end............................ */
+/* .......................................Main Start............................ */
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/* .......................Sect1 Start.................... */
+.all-cards {
+  padding: 70px 100px 40px 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.all-cards .card {
+  width: 31%;
+}
+.card img {
+  width: 100%;
+}
+.card .card-descrip {
+  width: 100%;
+  color: var(--color3);
+}
+.card .card-descrip h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.card .card-descrip p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color2);
+  padding: 15px 0px;
+}
+.card .card-descrip a {
+  color: var(--color3);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+.card .card-descrip a i {
+  font-size: 10px;
+  margin: 0px 5px;
+  padding: 5px;
+  background-color: var(--color1);
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  transition: all 0.2s ease-in-out;
+}
+.card .card-descrip a:hover i {
+  transform: rotate(0deg);
+}
+/* .......................Sect1 End.................... */
+/* .......................Sect2 Start.................. */
+.sect2 {
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.img2 {
+  width: 48%;
+  position: relative;
+}
+.big-img-fille2 {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.big-img-fille2 img {
+  width: 100%;
+  border-radius: 10px;
+  /* position: relative; */
+}
+.img2-descrip {
+  width: 50%;
+  position: absolute;
+  right: -50px;
+  bottom: 40px;
+  padding: 10px 20px;
+  background-color: white;
+  color: var(--color2);
+  box-shadow: 0px 0.5px 1px rgb(200, 200, 200);
+  border-radius: 10px;
+}
+.img2-descrip .quote {
+  width: 8%;
+  object-fit: contain;
+}
+.img2-descrip p {
+  font-size: 18px;
+  font-weight: 600;
+}
 
-}
-.card img{
-    width: 100%;
-}
-.card .card-descrip{
-    width: 100%;
-    color: var(--color3);
-}
-.card .card-descrip h3{
-    font-size: 24px;
-    font-weight: 600;
-}
-.card .card-descrip p{
-    font-size: 18px;
-    font-weight: 500; 
-    color: var(--color2);
-    padding: 15px 0px;
-}
-.card .card-descrip a{
-    color: var(--color3);
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-}
-.card .card-descrip a i{
-    font-size: 10px;
-    margin: 0px 5px;
-    padding: 5px;
-    background-color: var(--color1);
-    border-radius: 50%;
-    transform: rotate(-45deg);
-    transition: all .2s ease-in-out;
-}
-.card .card-descrip a:hover i{
-    transform: rotate(0deg);
-}
- /* .......................Sect1 End.................... */
- /* .......................Sect2 Start.................. */
-.sect2{
-    width: 100%;
-    padding: 100px;
-    display: flex;justify-content: space-between;
-    align-items: center;flex-wrap: wrap;
-    position: relative;
-}
-.img2{
-    width: 48%;
-    position: relative;
-}
-.big-img-fille2{
-    width: 100%;
-    border-radius: 10px;
-    position: relative; 
-}
-.big-img-fille2 img{
-    width: 100%;
-    border-radius: 10px;
-    /* position: relative; */
-}
-.img2-descrip{
-    width: 50%;
-    position: absolute;
-   right: -50px;bottom: 40px;
-   padding:10px  20px;
-background-color: white;
-color: var(--color2);
-box-shadow: 0px .5px 1px rgb(200, 200, 200);
-border-radius: 10px;
-}
-.img2-descrip .quote{
-width: 8%;
-object-fit: contain;
-}
-.img2-descrip p{
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.img2-descrip .info{
+.img2-descrip .info {
   right: 0%;
-transform: translateX(0%);
-padding: 10px 0px;
-margin: 0px;  
-box-shadow: none;
+  transform: translateX(0%);
+  padding: 10px 0px;
+  margin: 0px;
+  box-shadow: none;
 }
 
-.img2-descrip .info img{
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--color3);
-    object-fit: contain;
-    border-radius: 50%;
+.img2-descrip .info img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color3);
+  object-fit: contain;
+  border-radius: 50%;
 }
 .img2-descrip .info div {
-   line-height: 1.6;
-   margin: 0;
+  line-height: 1.6;
+  margin: 0;
   position: relative;
   align-self: flex-start;
-  }
-.img2-descrip  .info div h5{
-      font-size: 14px;
-      font-weight: 700;
-    }
-.img2-descrip .info div p{
-      font-size: 12px;
-      font-weight: 500;
-    }
-.sect2-descrip{
-    width: 40%;
-   display: flex;justify-content: flex-start;
-   flex-direction: column;
-   color: var(--color3);
 }
-.sect2-descrip h2{
-    font-size: 47px;
-    font-weight: 500;
-    line-height: 1.2;
+.img2-descrip .info div h5 {
+  font-size: 14px;
+  font-weight: 700;
 }
-.sect2-descrip p{
-    font-size: 20px;
-    font-weight: 400;
-   padding: 20px 0px;
-   color: var(--color2);
+.img2-descrip .info div p {
+  font-size: 12px;
+  font-weight: 500;
 }
- /* .......................Sect2 End.................... */
- /* .......................Sect3 Start.................... */
-.sect3{
-    width: 100%;
-    padding: 40px 100px;
-    display: flex;justify-content: space-between;
-    align-items: center;flex-wrap: wrap-reverse;
+.sect2-descrip {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: var(--color3);
 }
-.sect3 .img2{
-    width: 56%;
+.sect2-descrip h2 {
+  font-size: 47px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.sect2-descrip p {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 0px;
+  color: var(--color2);
+}
+/* .......................Sect2 End.................... */
+/* .......................Sect3 Start.................... */
+.sect3 {
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.sect3 .img2 {
+  width: 56%;
   padding: 40px;
 }
-.sect3 .img2 img{
-    width: 100%;
-    object-fit: cover;
-  
+.sect3 .img2 img {
+  width: 100%;
+  object-fit: cover;
 }
-.sect3 .sect2-descrip{
-    width: 37%;
+.sect3 .sect2-descrip {
+  width: 37%;
 }
 
-.sect3 .buy{
-width: 34%;
-padding: 10px 0px;
-margin-top: 20px;
+.sect3 .buy {
+  width: 34%;
+  padding: 10px 0px;
+  margin-top: 20px;
 }
- /* .......................Sect3 End.................... */
- /* .......................Sect4 Start.................... */
- .sect4{
-    width: 100%;
-    padding: 60px 100px;
-    display: flex;justify-content: space-between;
-    align-items: center;flex-wrap: wrap-reverse;
-    color: var(--color3);
-    text-align: center;
+/* .......................Sect3 End.................... */
+/* .......................Sect4 Start.................... */
+.sect4 {
+  width: 100%;
+  padding: 60px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  color: var(--color3);
+  text-align: center;
 }
-.sect4 h3{
-    font-size: 45px;
-    font-weight: 500;
-    line-height: 1.2;
+.sect4 h3 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.2;
 }
-.sect4 p{
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--color2);
+.sect4 p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color2);
 }
-.sect4 .stars{
-    font-size: 14px;
+.sect4 .stars {
+  font-size: 14px;
 }
-.customers{
-width: 34%;
-text-align: left;
+.customers {
+  width: 34%;
+  text-align: left;
 }
-.rating{
-width: 33%;
+.rating {
+  width: 33%;
 }
-.reviews{
-width: 33%;
+.reviews {
+  width: 33%;
 }
-  /* .......................Sect4 End.................... */
-  /* .......................Sect5 Start.................... */
-  .sect5{
-    width: 100%;
-    padding:40px 100px ;
-    display: flex;justify-content: space-between;
-    align-items: center;flex-wrap: wrap;
-    position: relative;
-    color: var(--color3);
+/* .......................Sect4 End.................... */
+/* .......................Sect5 Start.................... */
+.sect5 {
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  color: var(--color3);
 }
- .sect5 .img2{
-    width: 48%;
-    position: relative;
+.sect5 .img2 {
+  width: 48%;
+  position: relative;
 }
-.sect5 .sect2-descrip{
-    width: 40%;
-   display: flex;justify-content: flex-start;
-   flex-direction: column;
-   color: var(--color3);
+.sect5 .sect2-descrip {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: var(--color3);
 }
-.sect5 .sect2-descrip ul{
-    list-style: none;
+.sect5 .sect2-descrip ul {
+  list-style: none;
 }
-.sect5 .sect2-descrip ul li{
-   font-size: 15px;
-   font-weight: 700;
-   padding: 6px 0px;
+.sect5 .sect2-descrip ul li {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 6px 0px;
 }
-.sect5 .sect2-descrip ul li i{
-    font-size: 10px;
-    font-weight: 600;
-   padding: 4px;
-   margin-right: 5px;
-   border-radius: 50%;
-   background-color: var(--color1);
-
- }
+.sect5 .sect2-descrip ul li i {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: var(--color1);
+}
 /* ..........................Sect6 ...................... */
 
-.sect6 .card img{
-    border-radius: 12px;
-    object-fit: contain;
+.sect6 .card img {
+  border-radius: 12px;
+  object-fit: contain;
 }
-.sect6 .card p{
-   font-size: 14px;
-   padding: 5px 0px;
+.sect6 .card p {
+  font-size: 14px;
+  padding: 5px 0px;
 }
-.sect6 .card h3{
-    font-size: 24px; 
-    line-height: 1.5;
-    padding: 10px 0px 30px 0px;
+.sect6 .card h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 10px 0px 30px 0px;
 }
- /* .......................Sect7 Start.................... */
- .sect7{
-    width: 100%;
-    padding:40px 100px ;
-    display: flex;justify-content: space-between;
-    align-items: center;flex-direction: column;
-    color: var(--color3);
+/* .......................Sect7 Start.................... */
+.sect7 {
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color3);
 }
-.plan-intro{
-    width: 100%;
-    display: flex;justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 0px;
+.plan-intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px;
 }
-.plan-intro h2{
-    font-size: 43px;
-    font-weight: 600;
-    line-height: 1.2;
-    padding: 10px 0px;
+.plan-intro h2 {
+  font-size: 43px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 10px 0px;
 }
-.plan-intro p{
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--color2);
+.plan-intro p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color2);
 }
-.all-plan{
-    width: 100%;
-    display: flex;justify-content: space-between;flex-wrap: wrap;   
-    padding: 40px 0px;
-
+.all-plan {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 0px;
 }
-.plan{
-    width: 32%;
-    background-color: white;
-    /* box-shadow: 5px 10px 30px rgb(200, 200, 200); */
-    padding:10px ;
-    display: flex;flex-direction: column;
-    justify-content: space-between;
-    filter: blur(.3px);
+.plan {
+  width: 32%;
+  background-color: white;
+  /* box-shadow: 5px 10px 30px rgb(200, 200, 200); */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  filter: blur(0.3px);
 }
-.plan h4{
-font-size: 23px;
-font-weight: 600;
+.plan h4 {
+  font-size: 23px;
+  font-weight: 600;
 }
-.plan h3{
- font-size: 46px;
- font-weight: 600; 
-    }
-.plan h3 span{
-   font-size: 15px;
-   font-weight: 500; 
-color: var(--color0);
-        }
-.plan h3 .dollar{
-   font-size: 23px;
+.plan h3 {
+  font-size: 46px;
+  font-weight: 600;
+}
+.plan h3 span {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color0);
+}
+.plan h3 .dollar {
+  font-size: 23px;
   font-weight: 700;
   color: var(--color3);
-     }
-.plan p{
-    width: 70%;
+}
+.plan p {
+  width: 70%;
   font-size: 14px;
-  font-weight: 500; 
+  font-weight: 500;
   color: var(--color0);
   padding: 0px 0px 20px 0px;
-      }                  
-.plan a{
- width: 100%;
- padding: 10px 0px; 
- text-align: center;
- text-decoration: none;
- align-self: center;
- background-color: #fff;
- border: .3px solid var(--color1);
- border-radius: 10px;
- font-weight: 700;
- transition: all .5s ease-in-out;
-    }
-.plan a:hover{  
- background-color: var(--color1);
-}   
-.plan ul{
+}
+.plan a {
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  align-self: center;
+  background-color: #fff;
+  border: 0.3px solid var(--color1);
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+}
+.plan a:hover {
+  background-color: var(--color1);
+}
+.plan ul {
   list-style: none;
   padding: 20px 0px;
-  }     
-.plan ul li{
-   font-size: 14px;
-   padding: 5px 0px;
-   font-weight: 600;
-   color: var(--color2);
-    } 
-.plan ul li i{
-    font-size: 14px;
-    font-weight: 800;
-    padding-right: 15px;
-        } 
+}
+.plan ul li {
+  font-size: 14px;
+  padding: 5px 0px;
+  font-weight: 600;
+  color: var(--color2);
+}
+.plan ul li i {
+  font-size: 14px;
+  font-weight: 800;
+  padding-right: 15px;
+}
 /* ................................... Sect8 ....................... */
-.sect8{
-    width: 100%;
-    padding: 60px  120px;
-    display: flex;justify-content: center;
-    color: var(--color3);
+.sect8 {
+  width: 100%;
+  padding: 60px 120px;
+  display: flex;
+  justify-content: center;
+  color: var(--color3);
 }
-.carte{
-    width: 100%;
-    display: flex;justify-content: space-around;
-    flex-direction: row;align-items: center;
-    /* background: linear-gradient(120deg ,rgb(246, 246, 246)65%,rgb(224, 168, 242)35% ); */
-    background: url(./images/bgrd-carte.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    padding: 10px 10px 0px 10px;
+.carte {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  /* background: linear-gradient(120deg ,rgb(246, 246, 246)65%,rgb(224, 168, 242)35% ); */
+  background: url(./images/bgrd-carte.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 10px 10px 0px 10px;
+}
+.carte .img2-descrip {
+  background-color: transparent;
+  box-shadow: none;
+  width: 48%;
+  align-self: center;
+  padding: 5px 65px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: var(--color3);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  vertical-align: middle;
+}
+.carte .img2-descrip .quote {
+  width: 8%;
+}
+.carte .img2-descrip p {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 20px 0px;
+}
 
+.carte .img2-descrip .info {
+  right: 0%;
+  transform: translateX(0%);
+  padding: 10px 0px;
+  margin: 0px;
+  box-shadow: none;
+  background-color: transparent;
+  justify-content: flex-start;
 }
-.carte .img2-descrip{
-    background-color: transparent;
-    box-shadow: none;
-    width: 48%;
-    align-self: center;
-    padding: 5px 65px;
-    position: relative;
-top: 0;left: 0;right: 0;bottom: 0;
-color: var(--color3);
-display: flex;justify-content: space-between;flex-direction: column;
-vertical-align: middle;
-}
-.carte .img2-descrip .quote{
-    width: 8%;
-    }
-.carte .img2-descrip p{
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 1.5;
-        padding: 20px 0px;
-    }
-    
-.carte .img2-descrip .info{
-      right: 0%;
-    transform: translateX(0%);
-    padding: 10px 0px;
-    margin: 0px;  
-    box-shadow: none;
-    background-color: transparent;
-    justify-content: flex-start;
-    }
-    
-.carte .img2-descrip .info img{
-        width: 55px;
-        height: 55px;
-        border: 3px solid var(--color3);
-        object-fit: contain;
-        border-radius: 50%;
-        margin-right: 5px;
 
-    }
+.carte .img2-descrip .info img {
+  width: 55px;
+  height: 55px;
+  border: 3px solid var(--color3);
+  object-fit: contain;
+  border-radius: 50%;
+  margin-right: 5px;
+}
 .carte .img2-descrip .info div {
-       line-height: 1.4;
-       margin: 0;
-      position: relative;
-      align-self: flex-start;
-      }
-.carte .img2-descrip  .info div h5{
-          font-size: 22px;
-          font-weight: 800;
-        }
-.carte .img2-descrip .info div p{
-    padding: 0;
-          font-size: 15px;
-          font-weight: 500;
-        }
+  line-height: 1.4;
+  margin: 0;
+  position: relative;
+  align-self: flex-start;
+}
+.carte .img2-descrip .info div h5 {
+  font-size: 22px;
+  font-weight: 800;
+}
+.carte .img2-descrip .info div p {
+  padding: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
 
 /* .................... */
-.carte-img{
-    width: 50%;
+.carte-img {
+  width: 50%;
 }
-.carte-img img{
-    width: 100%;
-    vertical-align: middle;
-    object-fit: contain;
+.carte-img img {
+  width: 100%;
+  vertical-align: middle;
+  object-fit: contain;
 }
- /* .......................................Main End............................ */
- /* .......................................Footer Start............................ */
-footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;flex-direction: column;
-    background: url(./images/footer-bgrd.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+/* .......................................Main End............................ */
+/* .......................................Footer Start............................ */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: url(./images/footer-bgrd.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.footer-part1{
-    width: 100%;display: flex;justify-content: space-between;
-    align-items: flex-start;
-    padding: 100px 100px 90px 100px; 
+.footer-part1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 100px 90px 100px;
 }
-.footer-item{
- width: 20%;
- list-style: none;
+.footer-item {
+  width: 20%;
+  list-style: none;
 }
-.footer-item li{
-font-size: 16px ;
-font-weight: 700;
-padding-bottom: 8px;
-color: var(--color3);
+.footer-item li {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  color: var(--color3);
 }
-.footer-item li a{
-text-decoration: none;
-font-size: 14px ;
-font-weight: 600;
-color: var(--color0);
-transition: all .5s ease-in-out;
+.footer-item li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color0);
+  transition: all 0.5s ease-in-out;
 }
-.footer-item li a:hover{
-    text-decoration: underline;
-    color: var(--color3);
-    }
-.footer-logo{
+.footer-item li a:hover {
+  text-decoration: underline;
+  color: var(--color3);
+}
+.footer-logo {
   width: 40%;
 }
-.footer-part2{
-    width: 100%;
-    padding: 10px 100px; 
+.footer-part2 {
+  width: 100%;
+  padding: 10px 100px;
 }
-.copyright{
-   display: flex;justify-content: space-between;
-align-items: flex-start; 
-border-top: .5px solid rgb(233, 233, 233);
-padding: 35px 0px 90px 0px;
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 0.5px solid rgb(233, 233, 233);
+  padding: 35px 0px 90px 0px;
 }
-.copyright p{
-    font-size: 14px ;
-    font-weight: 600;
-    color: var(--color0);
-    padding: 10px 0px;
-
+.copyright p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color0);
+  padding: 10px 0px;
 }
-.copyright .reseaux-sociaux{
-    padding: 10px 0px;
-display: flex;justify-content: space-between;
+.copyright .reseaux-sociaux {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
 }
-.copyright .reseaux-sociaux i{
-   color: var(--color3);
-font-size: 23px; 
-cursor: pointer;
-padding: 0px 15px;
+.copyright .reseaux-sociaux i {
+  color: var(--color3);
+  font-size: 23px;
+  cursor: pointer;
+  padding: 0px 15px;
 }
-  /* .......................................Footer End............................ */
+/* .......................................Footer End............................ */
 /* .......................... Features Start.................//////////////////*/
 /* ................. Features Header Start...................///////////////// */
 
-.header-features{
- background: none; 
- background-color: #fff;
+.header-features {
+  background: none;
+  background-color: #fff;
 }
-.features-introdaction{
-padding: 30px 100px 60px 100px;
-    align-items: center;
-
+.features-introdaction {
+  padding: 30px 100px 60px 100px;
+  align-items: center;
 }
-features-left-intro{
-    width: 50%;
+features-left-intro {
+  width: 50%;
 }
-.features-right-intro{
-    width: 50%;
+.features-right-intro {
+  width: 50%;
 }
-.features-right-intro img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+.features-right-intro img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 /* ................. Features Header End ..................... ////////////////*/
 /* ................. Features Main Start ..................... ////////////////*/
 /* ............... Sect1 .................. */
-.all-features-card{
-    padding-bottom: 100px;
+.all-features-card {
+  padding-bottom: 100px;
 }
-.features-card img{
-    width: 20%;
+.features-card img {
+  width: 20%;
 }
 /* ................. Sect3 ................ */
-.features-table-img .img2{
-    width: 48%;
+.features-table-img .img2 {
+  width: 48%;
   padding: 40px;
 }
 /* ............. Sect7 ................ */
-.features-carte{
-    padding: 0;
+.features-carte {
+  padding: 0;
 }
-.carte .features-carte-descrip h3{
-font-size: 45px;
-font-weight: 600;
-line-height: 1.5;
-color: var(--color3);
+.carte .features-carte-descrip h3 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color3);
 }
-.carte .features-carte-descrip p{
-    font-size:18px ;
-    font-weight: 500;
-    color: var(--color0);
-    line-height: 1.8;
-    width: 80%;
-    }
+.carte .features-carte-descrip p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color0);
+  line-height: 1.8;
+  width: 80%;
+}
 /* ................. Features Main End ..................... ////////////////*/
 /* .......................... Features End........................ /////////*/
 
 /* ................. Blog Start ..................... ////////////////*/
-.intro{
-    width: 100%;
-    display: flex;justify-content: center;align-items: center;
-    flex-direction: column;
-    padding: 40px 0px;
-    text-align: center;
+.intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px;
+  text-align: center;
 }
-.intro h5{
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--color3);
-    background-color: rgb(246, 246, 246);
-    border-radius: 30px;
-    padding: 0px 10px;
+.intro h5 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color3);
+  background-color: rgb(246, 246, 246);
+  border-radius: 30px;
+  padding: 0px 10px;
 }
-.intro h2{
-font-size: 74px;
-font-weight: 600;
-color: var(--color3);
-line-height: 1.5;
-width: 50%;
+.intro h2 {
+  font-size: 74px;
+  font-weight: 600;
+  color: var(--color3);
+  line-height: 1.5;
+  width: 50%;
 }
 
 /* .......................... Blog End........................ /////////*/
 /* .......................... About Start........................ /////////*/
 /* .............. sect1 .......... */
-.all-about-fille-imgs{
-    width: 100%;
-    padding:40px 110px ;
-    display: flex;justify-content: space-between;align-items: center;
-    flex-wrap: wrap;
+.all-about-fille-imgs {
+  width: 100%;
+  padding: 40px 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.about-fille-item{
-    width: 31%;
-    margin: 5px;
+.about-fille-item {
+  width: 31%;
+  margin: 5px;
 }
-.about-fille-item img{
-    width: 100%;
-    object-fit: contain;
+.about-fille-item img {
+  width: 100%;
+  object-fit: contain;
 }
 /* ............. Sect2 ............ */
-.about-insurance-definition{
-    width: 100%;
-    padding: 40px 100px;
-    display: flex;justify-content: center;align-items: center;
-    text-align: center;
+.about-insurance-definition {
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.insurance-definition{
-    width: 54%;
-    display: flex;justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-
+.insurance-definition {
+  width: 54%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
-.insurance-definition h2{
-    font-size: 42px;
-    font-weight: 600;
-    color: var(--color3);
-    line-height: 1.5;
+.insurance-definition h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--color3);
+  line-height: 1.5;
 }
-.insurance-definition p{
-    font-size: 18px;
-font-weight: 500;
-color: var(--color4);
-line-height: 1.9;
-padding: 20px 0px;
+.insurance-definition p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color4);
+  line-height: 1.9;
+  padding: 20px 0px;
 }
 /*................... Sect3 ..............  */
-.about-insurance-numbers{
-    width: 100%;
-    padding: 40px 100px;
-    display: flex;justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+.about-insurance-numbers {
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
-.about-insurance-numbers h2{
-    font-size: 42px;
-    font-weight: 600;
-    color: var(--color3);
-    line-height: 1.5;
+.about-insurance-numbers h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--color3);
+  line-height: 1.5;
 }
-.insurance-numbers{
-    width: 100%;
-    padding: 40px 0px;
-    display: flex;justify-content: space-between; align-items: flex-start;
-    flex-wrap: wrap;  
+.insurance-numbers {
+  width: 100%;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.insurance-numbers-item{
-width: 30%;
-padding: 10px ;
-display: flex;justify-content: space-between;align-items: center;
-flex-direction: column;
-
+.insurance-numbers-item {
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
-.insurance-numbers-item h4{
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--color3);
-    line-height: 1.5;
-    }
-.insurance-numbers-item h3{
-    font-size: 72px;
-    font-weight: 600;
-    color: var(--color3);
-    line-height: 1.5;
-        }
-    .insurance-numbers-item p{
-        font-size: 16px;
-        font-weight: 500;
-        color: var(--color4);
-        line-height: 1.8;
-     }
-     /* .................Sect5 ............. */
-     .partners{
-        padding: 0px 100px 40px 100px;
-     }
-     .partners h2{
-align-self: flex-start;
-padding: 0px 0px 40px 0px;
-     }
-     .all-logo{
-        padding: 80px 0px 0px 0px;
-        display: flex;align-items: center;
-     }
-     .p-logo{
-        width: 13%;
-        margin: 5px;
-     }
-     .p-logo img{
-        width: 100%;
-        vertical-align: bottom;
-     }
+.insurance-numbers-item h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color3);
+  line-height: 1.5;
+}
+.insurance-numbers-item h3 {
+  font-size: 72px;
+  font-weight: 600;
+  color: var(--color3);
+  line-height: 1.5;
+}
+.insurance-numbers-item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color4);
+  line-height: 1.8;
+}
+/* .................Sect5 ............. */
+.partners {
+  padding: 0px 100px 40px 100px;
+}
+.partners h2 {
+  align-self: flex-start;
+  padding: 0px 0px 40px 0px;
+}
+.all-logo {
+  padding: 80px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+.p-logo {
+  width: 13%;
+  margin: 5px;
+}
+.p-logo img {
+  width: 100%;
+  vertical-align: bottom;
+}
 /* .......................... About End........................ /////////*/
 /* .......................... Contact Start ...................////////// */
-.header-contact{
-    background: url(./images/contact-bgrnd.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+.header-contact {
+  background: url(./images/contact-bgrnd.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
-.contact{
-    width: 49%;
-    align-self: center;
-    text-align: left;
-    justify-content: center;
-    align-items: flex-start;
-    padding:70px 60px 40px 60px;
-    
+.contact {
+  width: 49%;
+  align-self: center;
+  text-align: left;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 70px 60px 40px 60px;
 }
-.contact h2{
-   font-size: 45px;
-   font-weight: 600;
-line-height: 1.8;
+.contact h2 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.8;
 }
-.contact p{
-  font-size:18px ;
- font-weight: 500;
- color: var(--color4);
-padding: 10px 0px;
-} 
-.contact form{
-    width: 100%;
-    display: flex;justify-content: space-between;
-    flex-direction: column;
+.contact p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color4);
+  padding: 10px 0px;
 }
-.contact input,.contact textarea{
-    width: 100%;
-    padding:15px 12px;
-    margin: 5px 0px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    font-size: 16px;
-    color: var(--color3);
+.contact form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 15px 12px;
+  margin: 5px 0px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: var(--color3);
 }
 .contact input::placeholder,
-.contact textarea::placeholder{
-font-size: 15px;
-font-weight: 600;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+.contact textarea::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.contact textarea{
-max-width: 100%;
-min-width: 100%;
-max-height: 20vh;
-min-height: 20vh;
+.contact textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 20vh;
+  min-height: 20vh;
 }
-.contact .form-btn{
-    color: var(--color3);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: var(--color1);
-    opacity: 1;
+.contact .form-btn {
+  color: var(--color3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: var(--color1);
+  opacity: 1;
 }
-.contact .form-btn:hover{
-opacity: .8;
+.contact .form-btn:hover {
+  opacity: 0.8;
 }
 /* .......................... Contact End ...................////////// */
 /* .......................... Shop Start...................////////// */
-.header-shop{
-    background-position: center;   
+.header-shop {
+  background-position: center;
 }
 .header-shop .plan-intro {
-    text-align: center;
-    }
-.header-shop .plan-intro h2{
-font-size: 75px;
+  text-align: center;
 }
-.header-shop .plan-intro p{
-    color: var(--color3);
-    width: 40%;
+.header-shop .plan-intro h2 {
+  font-size: 75px;
 }
-.header-shop .plan{
-background-color: transparent;
+.header-shop .plan-intro p {
+  color: var(--color3);
+  width: 40%;
 }
-.why-us{
-    width: 100%;
-    padding: 40px 100px;
-    display: flex;justify-content: space-between;
-    flex-direction: column;
+.header-shop .plan {
+  background-color: transparent;
 }
-.why-us-intro{
-    width: 100%;
-    display: flex;justify-content: space-between;
-    align-items: flex-start;flex-flow: row wrap;
-    color: var(--color3);
-    padding: 10px 0px 50px 0px;
+.why-us {
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.why-us-intro h3{
-   font-size: 55px;
-   font-weight: 600;
-   line-height: 1.2;
+.why-us-intro {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  color: var(--color3);
+  padding: 10px 0px 50px 0px;
 }
-.why-us-intro p{
-    width: 40%;
-    font-size: 18px;
-    font-weight: 500;
+.why-us-intro h3 {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.2;
 }
-.why-us-img{
-    width: 100%;
-   height: 60vh;
-    border-radius: 10px;
+.why-us-intro p {
+  width: 40%;
+  font-size: 18px;
+  font-weight: 500;
 }
-.why-us-img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    /* object-position: center; */
-    object-fit: cover;
+.why-us-img {
+  width: 100%;
+  height: 60vh;
+  border-radius: 10px;
 }
-.insure-type{
-    width: 100%;
-    display: flex;justify-content: space-between;
-    align-items: flex-start; flex-wrap: wrap;
-    padding: 50px 0px;
+.why-us-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  /* object-position: center; */
+  object-fit: cover;
 }
-.insure-type-item{
-    width: 31%;
-    color: var(--color3);
-    padding: 20px 0px;
-    margin: 5px;
+.insure-type {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 50px 0px;
 }
-.insure-type-item h4{
-    font-size: 23px;
-    font-weight: 500;
+.insure-type-item {
+  width: 31%;
+  color: var(--color3);
+  padding: 20px 0px;
+  margin: 5px;
 }
-.insure-type-item p{
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--color4);
-    line-height: 1.8;
-    padding: 8px 0px;
+.insure-type-item h4 {
+  font-size: 23px;
+  font-weight: 500;
+}
+.insure-type-item p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color4);
+  line-height: 1.8;
+  padding: 8px 0px;
 }
 /* .......................... Shop End ...................////////// */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ....................... Insure-Answer Start..............////////// */
+.intro-answer {
+  text-align: center;
+  padding-top: 50px;
+}
+.intro-answer p {
+  font-size: 14px;
+  color: var(--color4);
+  padding: 20px 0px;
+}
+.intro-answer h2 {
+  width: 75%;
+  line-height: 1.1;
+}
+.insure-article {
+  width: 100%;
+  padding: 40px 100px 0px 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.insure-article-img {
+  width: 100%;
+  height: 80vh;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.insure-article-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.insure-article-text {
+  width: 85%;
+  padding: 80px 0px;
+  color: var(--color3);
+}
+.insure-article-text h3 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 14px 0px;
+}
+.insure-article-text p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color4);
+}
+/* ............................. */
+.author-article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gainsboro;
+  margin-top: 70px;
+  padding: 30px 0px;
+}
+.author-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.author-name img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+.author-name h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.author-name p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.author-reseaux p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.author-reseaux .s-media {
+  padding: 8px 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.author-reseaux i {
+  width: 30%;
+  color: var(--color3);
+  font-size: 23px;
+  cursor: pointer;
+  /* padding: 10px 30px 0px 0px; */
+}
+/* .author-reseaux i:nth-child(3){
+    padding: 10px 0px 0px 0px;
+} */
+/* ....................... Insure-Answer Start..............////////// */
 
 
 
@@ -1250,485 +1309,576 @@ background-color: transparent;
 /* //////////////////////..................Media Qry */
 
 @media screen and (max-width: 1250px) {
-.all-cards{
-        padding:  40px;
-    }
+  .all-cards {
+    padding: 40px;
+  }
 
-    /* .....................Sect8 ............ */
-    .sect8{
-        padding: 40px 70px;
-    }
-    .carte{
-        width: 100%;
-        display: flex;justify-content: space-around;
-        flex-direction: column;align-items: center;
-    }
-    .carte .img2-descrip{
-       width: 90%;
-
-    }
-.carte-img{
-            width: 90%;
-        }
+  /* .....................Sect8 ............ */
+  .sect8 {
+    padding: 40px 70px;
+  }
+  .carte {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carte .img2-descrip {
+    width: 90%;
+  }
+  .carte-img {
+    width: 90%;
+  }
 }
 
+@media screen and (max-width: 1160px) {
+  /* //////////////////////////// ..................Header*/
 
+  .introdaction {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  /* .................................... left-intro */
+  .left-intro {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .right-intro {
+    width: 100%;
+    margin: 100px 0px 0px 0px;
+    padding: 20px 40px;
+  }
+  /* //////////////////////////// ..................Main */
+  /* .......................Sect1 Start.................. */
+  .all-cards {
+    padding: 40px;
+    justify-content: center;
+  }
+  .all-cards .card {
+    width: 65%;
+    margin-bottom: 20px;
+  }
 
-
-  @media screen and (max-width: 1160px) {
-        /* //////////////////////////// ..................Header*/
-
-    .introdaction{
-        width: 100%;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 10px;
-    }
-    /* .................................... left-intro */
-    .left-intro{
-        width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .right-intro{
-        width: 100%;
-        margin: 100px 0px 0px 0px;
-        padding: 20px 40px;
-    }
-    /* //////////////////////////// ..................Main */
-     /* .......................Sect1 Start.................. */
-    .all-cards{
-        padding:  40px;
-        justify-content: center;
-        
-    }
-    .all-cards .card{
-        width: 65%;
-        margin-bottom: 20px;
-    }
-
-     /* .......................Sect1 end.................. */
- /* .......................Sect2 Start.................. */
- .sect2{
+  /* .......................Sect1 end.................. */
+  /* .......................Sect2 Start.................. */
+  .sect2 {
     justify-content: center;
     padding: 80px 0px;
- }
- .img2{
+  }
+  .img2 {
     width: 70%;
     /* padding: 0px 120px; */
     position: relative;
-    display: flex;flex-direction: column;
-}
-.img2-descrip{
-   margin: 0px 50px;
-   position: absolute;
-   right: -130px;bottom: 40px;
-}
-.sect2-descrip{
+    display: flex;
+    flex-direction: column;
+  }
+  .img2-descrip {
+    margin: 0px 50px;
+    position: absolute;
+    right: -130px;
+    bottom: 40px;
+  }
+  .sect2-descrip {
     width: 90%;
     padding: 60px 0px;
     text-align: center;
-}
-/* ............................Sect3 Start ..........*/
-.sect3{
+  }
+  /* ............................Sect3 Start ..........*/
+  .sect3 {
     width: 100%;
-    padding: 40px ;
-    display: flex;justify-content: center;
-}
-.sect3 .img2{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .sect3 .img2 {
     width: 70%;
-  
-}
-.sect3 .sect2-descrip{
+  }
+  .sect3 .sect2-descrip {
     width: 70%;
-}
-.sect3 .buy{
+  }
+  .sect3 .buy {
     align-self: center;
-}
-/* ...................Sect4 Start */
-.sect4{
+  }
+  /* ...................Sect4 Start */
+  .sect4 {
     width: 100%;
     padding: 60px;
-    display: flex;justify-content: center;
-    align-items: center;flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     color: var(--color3);
     text-align: center;
-}
-.customers{
+  }
+  .customers {
     width: 80%;
     text-align: left;
     padding: 40px 0px;
     text-align: center;
-    }
-.rating{
+  }
+  .rating {
     width: 80%;
     padding: 40px 0px;
-    }
-.reviews{
+  }
+  .reviews {
     width: 80%;
     padding: 40px 0px;
-    }
-    /* .........................Sect5 ................. */
-    .sect5{
-        justify-content: center;
-        text-align: center;
-        padding: 40px 60px;
-    }
-    .sect5 .img2{
-        width: 70%;
-        position: relative;
-    }
-    .sect5 .sect2-descrip{
-        width: 70%;
-       display: flex;justify-content: flex-start;
-       flex-direction: column;
-       color: var(--color3);
-    }
-    /* ..............................Sect7 ................. */
-    .sect7{
-        padding: 40px ;  
-    }
-    .plan p{
-        width: 90%;
-    } 
-    /* .............. Footer ................. */
-    .footer-part1{
-        padding: 80px 40px 90px 80px; 
-    }
-    .footer-part2{
-        padding: 10px 40px;
-    }
-
-    /* ./////////////////////////////////////////....Features,About,Blog, */
-        /* ......sect1 */
-    .all-about-fille-imgs{
-        width: 100%;
-        padding:40px ;
-        display: flex;justify-content: center;align-items: center;
-    }
-    /* ......sect2 */
-    .about-insurance-definition{
-        width: 100%;
-        padding: 40px ;
-        display: flex;justify-content: center;align-items: center;
-        text-align: center;
-    }
-    /* ........Sect3 */
-    .about-insurance-numbers{
-        width: 100%;
-        padding: 40px;
-        display: flex;justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-     /* ............Sect5 .......... */
-     .all-logo{
-        justify-content: center;
-     }
-     .p-logo{
-        width: 40%;
-        padding:30px;
-        margin: 10px 
-     }
-     /* .............Contact... */
-    .contact{
-        width: 60%;
-        align-self: center;
-        text-align: left;
-        justify-content: center;
-        align-items: flex-start;
-        padding:70px 40px 40px 40px;
-        
-    }
-    /* .//////........ shop */
-    .why-us{
-        width: 100%;
-        padding: 40px 60px;
-        display: flex;justify-content: space-between;
-        flex-direction: column;
-    }
+  }
+  /* .........................Sect5 ................. */
+  .sect5 {
+    justify-content: center;
+    text-align: center;
+    padding: 40px 60px;
+  }
+  .sect5 .img2 {
+    width: 70%;
+    position: relative;
+  }
+  .sect5 .sect2-descrip {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: var(--color3);
+  }
+  /* ..............................Sect7 ................. */
+  .sect7 {
+    padding: 40px;
+  }
+  .plan p {
+    width: 90%;
+  }
+  /* .............. Footer ................. */
+  .footer-part1 {
+    padding: 80px 40px 90px 80px;
+  }
+  .footer-part2 {
+    padding: 10px 40px;
   }
 
-  /* .................................................................. */
-  @media screen and (max-width: 920px) {
-    nav{
-        padding: 40px;
-    }
- .fa-bars{
-        font-size: 25px ;
-        color: var(--color2);
-        padding: 10px;
-        display: block;
-    }
-    nav ul{
-        display: none;
-    }
-   /* ............................ Sect7 ....................... */
-   .plan-intro{
+  /* ./////////////////////////////////////////....Features,About,Blog, */
+  /* ......sect1 */
+  .all-about-fille-imgs {
     width: 100%;
-    display: flex;justify-content: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* ......sect2 */
+  .about-insurance-definition {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /* ........Sect3 */
+  .about-insurance-numbers {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  /* ............Sect5 .......... */
+  .all-logo {
+    justify-content: center;
+  }
+  .p-logo {
+    width: 40%;
+    padding: 30px;
+    margin: 10px;
+  }
+  /* .............Contact... */
+  .contact {
+    width: 60%;
+    align-self: center;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 70px 40px 40px 40px;
+  }
+  /* .//////......................... shop ////////////////////*/
+  .why-us {
+    width: 100%;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  /* .//////......................... insure-answer ////////////////////*/
+  .insure-article {
+    width: 100%;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .insure-article-img {
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+/* .................................................................. */
+@media screen and (max-width: 920px) {
+  nav {
+    padding: 40px;
+  }
+  .fa-bars {
+    font-size: 25px;
+    color: var(--color2);
+    padding: 10px;
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  /* ............................ Sect7 ....................... */
+  .plan-intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 40px ;
-}
-    .all-plan{
-        width: 100%;
-        display: flex;justify-content: center;flex-wrap: wrap;   
-        padding: 40px 0px;
-    
-    }
-    .plan{
-        width: 90%;
-        margin: 5px 0px;
-    }
-    .plan p{
-        width: 90%;
-    }  
-    /* ..................... Sect8 .............. */
-    .sect8{
-        padding: 40px 20px;
-    }
-    .carte .img2-descrip>p{
-font-size: 26px;
-    }
-    /* ....................... Footer ................... */
-    .footer-part1{
-        width: 100%;display: flex;justify-content: space-between;
-        align-items: flex-start;flex-wrap: wrap;
-        padding: 80px 40px 90px 40px; 
-    }
-    .footer-item{
-     width: 100%;
-     padding: 10px 0px;
-
-    }
-    .footer-part2{
-        width: 100%;
-        padding: 10px 20px; 
-    }
-    .copyright{
-       display: flex;justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;flex-direction: column; 
-    border-top: .5px solid rgb(233, 233, 233);
-    padding: 35px 0px 90px 0px;
-    }
-    /* ./////////////////////////////////////////....Features,About,Blog, */
-    .intro h2{
-        font-size: 65px;
-        font-weight: 600;
-        color: var(--color3);
-        line-height: 1.3;
-        width: 90%;
-        }
-        /* .............. sect1 .......... */
-.all-about-fille-imgs{
+    padding: 40px;
+  }
+  .all-plan {
     width: 100%;
-    padding:40px 20px ;
-    display: flex;justify-content: center;
-}
-.about-fille-item{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+  }
+  .plan {
+    width: 90%;
+    margin: 5px 0px;
+  }
+  .plan p {
+    width: 90%;
+  }
+  /* ..................... Sect8 .............. */
+  .sect8 {
+    padding: 40px 20px;
+  }
+  .carte .img2-descrip > p {
+    font-size: 26px;
+  }
+  /* ....................... Footer ................... */
+  .footer-part1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 80px 40px 90px 40px;
+  }
+  .footer-item {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .footer-part2 {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-top: 0.5px solid rgb(233, 233, 233);
+    padding: 35px 0px 90px 0px;
+  }
+  /* ./////////////////////////////////////////....Features,About,Blog, */
+  .intro h2 {
+    font-size: 65px;
+    font-weight: 600;
+    color: var(--color3);
+    line-height: 1.3;
+    width: 90%;
+  }
+  /* .............. sect1 .......... */
+  .all-about-fille-imgs {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .about-fille-item {
     width: 90%;
     padding: 20px 0px;
-}
-/* .................Sect2 ............... */
-.about-insurance-definition{
+  }
+  /* .................Sect2 ............... */
+  .about-insurance-definition {
     width: 100%;
     padding: 40px 20px;
-    display: flex;justify-content: center;align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-}
-.insurance-definition{
-      width: 90%;
- }
- /*................... Sect3 ..............  */
-.about-insurance-numbers{
+  }
+  .insurance-definition {
+    width: 90%;
+  }
+  /*................... Sect3 ..............  */
+  .about-insurance-numbers {
     width: 100%;
     padding: 40px 20px;
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     text-align: center;
-}
-.about-insurance-numbers h2{
+  }
+  .about-insurance-numbers h2 {
     font-size: 40px;
     font-weight: 600;
     color: var(--color3);
     line-height: 1.5;
-}
-.insurance-numbers{
+  }
+  .insurance-numbers {
     width: 100%;
     padding: 40px 20px;
-    display: flex;justify-content: center;   
-}
-.insurance-numbers-item{
-width: 90%;
-padding: 0px ;
-margin: 16px 0px;
-display: flex;justify-content: space-between;align-items: center;
-flex-direction: column;
-
-}
-.insurance-numbers-item h4{
+    display: flex;
+    justify-content: center;
+  }
+  .insurance-numbers-item {
+    width: 90%;
+    padding: 0px;
+    margin: 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .insurance-numbers-item h4 {
     font-size: 20px;
     font-weight: 600;
     color: var(--color3);
     line-height: 1.5;
-    }
-.insurance-numbers-item h3{
+  }
+  .insurance-numbers-item h3 {
     font-size: 65px;
     font-weight: 600;
     color: var(--color3);
     line-height: 1.5;
-        }
-        /* ............Sect5 .......... */
-    .p-logo{
-      width: 60%;
-      padding:40px 10px ;
-     }
-/* ...............Contact ............. */
-.contact{
+  }
+  /* ............Sect5 .......... */
+  .p-logo {
+    width: 60%;
+    padding: 40px 10px;
+  }
+  /* ...............Contact ............. */
+  .contact {
     width: 90%;
     align-self: center;
     text-align: left;
     justify-content: center;
     align-items: flex-start;
-    padding:70px 20px 40px 20px;
-    
-}
-/* ./////////////...................shop */
-.why-us{
+    padding: 70px 20px 40px 20px;
+  }
+  /* ./////////////....................shop ..///////////////////*/
+  .why-us {
     width: 100%;
     padding: 40px 20px;
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
-}
-.header-shop .plan-intro{
+  }
+  .header-shop .plan-intro {
     text-align: left;
-}
-.header-shop .plan-intro h2{
-   font-size: 60px;
-}
-.header-shop .plan-intro p{
+  }
+  .header-shop .plan-intro h2 {
+    font-size: 60px;
+  }
+  .header-shop .plan-intro p {
     color: var(--color3);
     width: 90%;
-}
-.why-us-intro{
+  }
+  .why-us-intro {
     width: 100%;
-    display: flex;justify-content: center;
-    align-items: center;flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
     text-align: center;
     color: var(--color3);
     padding: 10px 0px 50px 0px;
-}
-.why-us-intro h3{
-   font-size: 45px;
-}
-.why-us-intro p{
+  }
+  .why-us-intro h3 {
+    font-size: 45px;
+  }
+  .why-us-intro p {
     width: 100%;
-}
-.insure-type{
+  }
+  .insure-type {
     width: 100%;
-    display: flex;justify-content: center;
-    align-items: center; flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
     padding: 50px 0px;
-}
-.insure-type-item{
+  }
+  .insure-type-item {
     width: 90%;
     color: var(--color3);
     padding: 20px 0px;
     margin: 5px;
-}
   }
-/* ................................................................................... */
-  @media screen and (max-width: 800px) {
-    /* .......................header Start................ */
-    .part-one{
-        padding-top: 60px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;   
-    }
-    .part-two{
-        display: none;
-    }
-    .part-one .image{
-        width: 100%;
-        }
-    .part-one .info{
-        width: 100%;
-        right: 0;
-        transform: translateX(0%);
-        }
- /* ..../////////////////////// ..Main.................. */
-         /* .......................Sect1 Start.................. */
+  /*///////////////// ............Insure-Answer../////////////////// */
+  .intro-answer h2 {
+    font-size: 50px;
+    width: 95%;
+    line-height: 1.1;
+  }
 
-    .all-cards{
-            padding:  40px 0px;
-            justify-content: center;
-            
-        } 
-        .all-cards .card{
-            width: 75%;
-            margin-bottom: 30px;
-        }
-.features-card {
+  .insure-article {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .insure-article-img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .insure-article-text {
+    width: 100%;
+    padding: 80px 0px;
+    color: var(--color3);
+  }
+  .insure-article-text h3 {
+    font-size: 35px;
+  }
+  /* ................... */
+  .author-article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid gainsboro;
+    margin-top: 70px;
+    padding: 30px 0px;
+  }
+  .author-reseaux {
+    padding: 15px 0px;
+    text-align: center;
+  }
+}
+/* ................................................................................... */
+@media screen and (max-width: 800px) {
+  /* .......................header Start................ */
+  .part-one {
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .part-two {
+    display: none;
+  }
+  .part-one .image {
+    width: 100%;
+  }
+  .part-one .info {
+    width: 100%;
+    right: 0;
+    transform: translateX(0%);
+  }
+  /* ..../////////////////////// ..Main.................. */
+  /* .......................Sect1 Start.................. */
+
+  .all-cards {
+    padding: 40px 0px;
+    justify-content: center;
+  }
+  .all-cards .card {
+    width: 75%;
+    margin-bottom: 30px;
+  }
+  .features-card {
     align-self: center;
     text-align: center;
-        }
-        /* .......................Sect2 Start.................. */
-        .img2{
-            width: 90%;
-            position: relative;
-        }
-     .img2-descrip{
-            width: 90%;
-            align-self: center;
-            position: relative;
-           right: 0px;bottom: 0px;
-           margin: 40px 10px;
-        }
-        /* ............................Sect3 Start ..........*/
-  .sect3{
-       width: 100%;
-       padding: 5px 10px;
-       display: flex;justify-content: center;
-        }
-.sect3 .img2{
+  }
+  /* .......................Sect2 Start.................. */
+  .img2 {
     width: 90%;
-  
-}
-.sect3 .sect2-descrip{
+    position: relative;
+  }
+  .img2-descrip {
+    width: 90%;
+    align-self: center;
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    margin: 40px 10px;
+  }
+  /* ............................Sect3 Start ..........*/
+  .sect3 {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .sect3 .img2 {
+    width: 90%;
+  }
+  .sect3 .sect2-descrip {
     width: 95%;
-}
- /* .........................Sect5 ................. */
- .sect5{
+  }
+  /* .........................Sect5 ................. */
+  .sect5 {
     justify-content: center;
     text-align: center;
     padding: 40px 0px;
-}
-.sect5 .img2{
-    width: 90%;
-  
-}
-.sect5 .sect2-descrip{
-    width: 90%;
-}
-  /* ..............................Sect7 ................. */
-  .sect7{
-    padding: 40px 0px;  
-}
-/* ........................... Sect8 ...................... */
-.carte .img2-descrip{
-    width: 90%;
-     padding: 5px;
- }
   }
+  .sect5 .img2 {
+    width: 90%;
+  }
+  .sect5 .sect2-descrip {
+    width: 90%;
+  }
+  /* ..............................Sect7 ................. */
+  .sect7 {
+    padding: 40px 0px;
+  }
+  /* ........................... Sect8 ...................... */
+  .carte .img2-descrip {
+    width: 90%;
+    padding: 5px;
+  }
+    /*///////////////// ............Insure-Answer../////////////////// */
+  .insure-article-img {
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+}
