@@ -96,6 +96,9 @@ nav ul li a.active{
   padding: 10px;
   display: none;
 }
+.fa-diamond{
+ font-size: 18px;
+}
 /* ...................................................................................... */
 .introdaction {
   width: 100%;
