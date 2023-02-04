@@ -26,10 +26,10 @@
         <div class="intro contact">
           <h2>Contact</h2>
           <p>We want to hear from you. Let us know how we can help.</p>
-           <form action="" method="post">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
+           <form id="form" action="./indata.php" method="POST">
+            <input type="text" placeholder="Name" name="name">
+            <input type="email" placeholder="Email" name="email">
+            <textarea name="message" id="" cols="30" rows="8" placeholder="Message"></textarea>
             <input class="form-btn" type="submit" value="Send Message">
            </form>
         </div>
