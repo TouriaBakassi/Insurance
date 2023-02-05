@@ -19,7 +19,7 @@
             <li><a href="../features/index.html">Features</a></li>
             <li><a href="../About/index.html">About us</a></li>
             <li><a href="../Blog/index.html">Blog</a></li>
-            <li class="btn"><a href="../Contact/index.html" >Contact Us</a></li>
+            <li class="btn"><a href="index.php" >Contact Us</a></li>
           </ul>
           <i class="fa-solid fa-bars"></i>
         </nav>
@@ -58,7 +58,7 @@
     <div class="footer-part1">
       <!-- <div class="footer-all-item"> -->
       <!-- ™🤍💎 -->
-      <h3 class="footer-item footer-logo"><a class="logo" href="#home">Insurance<sup><i class="fa-solid fa-diamond"></i></sup></a></h3>
+      <h3 class="footer-item footer-logo"><a class="logo" href="../index.html">Insurance<sup><i class="fa-solid fa-diamond"></i></sup></a></h3>
     
       <ul class="footer-item Insurances">
       <li>Insurances</li>
