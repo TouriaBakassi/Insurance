@@ -20,7 +20,7 @@ if (!empty($name) && !empty($email) && !empty($message) && !is_numeric($name)) {
  
 // $alert= " <script> alert('Done By Success!') </script>";
 //   echo $alert;
-  header("Location: index.php");
+  header("Location: index.html");
  die;
 }
 }else {
