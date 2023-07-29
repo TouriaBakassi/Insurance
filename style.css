@@ -1885,3 +1885,9 @@ features-left-intro {
     position: relative;
   }
 }
+@media screen and (max-width: 500px) {
+  .all-cards .card {
+    width: 75%;
+    margin-bottom: 30px;
+  }
+}
