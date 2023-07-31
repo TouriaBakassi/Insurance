@@ -27,7 +27,6 @@ header {
   background-color: rgb(245, 242, 248);
   background: url(./images/background.png);
   background-size: cover;
-
   flex-direction: column;
 }
 nav {
@@ -90,7 +89,7 @@ nav ul li a.active{
   text-decoration: none;
   transition: all 0.9s ease-in-out;
 }
-.fa-bars {
+.icon-bar-xmark {
   font-size: 25px;
   color: var(--color2);
   padding: 10px;
@@ -99,7 +98,54 @@ nav ul li a.active{
 .fa-diamond{
  font-size: 18px;
 }
-/* ...................................................................................... */
+
+/* ..................Navbar Start ........... */
+#navbar{
+  width: 100%;
+  background: url(./images/background.png);
+  background-position: top left;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: blueviolet;
+ /* transform: translate(-100%); */
+ display: none;
+}
+#navbar.open{
+  display: flex;
+}
+.fa-xmark{
+  display: none;
+}
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}
+#navbar ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+#navbar ul li{
+  width: 70%;
+  display: block;
+  text-align: center;
+  margin: 0 0 6px 0;
+  padding: 0;
+}
+#navbar ul li a{
+  text-align: center;
+}
+#navbar ul li.btn{
+ padding: 6px 12px; 
+}
+/*................... Navbar End ............ */
+/* ................... Introduction ............................... */
 .introdaction {
   width: 100%;
   display: flex;
@@ -1557,6 +1603,12 @@ features-left-intro {
   nav ul {
     display: none;
   }
+  .none{
+    display: none;
+  }
+  .block{
+    display: block;
+  }
   /* ............................ Sect7 ....................... */
   .plan-intro {
     width: 100%;
@@ -1889,8 +1941,24 @@ features-left-intro {
   }
 }
 @media screen and (max-width: 500px) {
+  nav{
+    padding: 40px 20px;
+  }
   .all-cards .card {
     width: 75%;
     margin-bottom: 90px;
   }
+}
+
+
+
+/* ................................ */
+@media screen and (min-width: 920px){
+.fa-bars,
+.fa-xmark{
+  display: none;
+}
+#navbar.close{
+  display: none;
+}
 }
