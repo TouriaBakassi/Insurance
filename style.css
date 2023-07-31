@@ -39,7 +39,7 @@ nav {
   text-decoration: none;
   font-size: 29px;
   font-weight: 700;
-  filter: blur(0.7px);
+  filter: blur(0.3px);
   color: var(--color3);
 }
 .logo sup {
