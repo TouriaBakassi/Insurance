@@ -107,7 +107,7 @@ nav ul li a.active{
   display: flex;
   justify-content: center;
   align-items: center; 
-  background-color: blueviolet;
+  background-color: rgba(137, 43, 226, 0.069);
  /* transform: translate(-100%); */
  display: none;
 }
